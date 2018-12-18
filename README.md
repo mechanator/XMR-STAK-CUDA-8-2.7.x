@@ -1,6 +1,7 @@
 # XMR-STAK-CUDA-8-2.7.x
 Allows mining on GTX 400 500 and Tesla Series of Fermi cards. Supports v2 algorithms.
 12/17/2018 Build version 1.1
+
 Problem:
  If you have Fermi (Tesla) cards or GTX 400/500 cards and attempt to run CUDA 9.1,9.2, or 10. XMR-STAK just refuses to format the CUDA code for that chip architecture.
 
