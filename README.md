@@ -3,9 +3,11 @@ Allows mining on GTX 400 500 and Tesla Series of Fermi cards. Supports v2 algori
 12/17/2018 Build version 1.1
 Problem:
  If you have Fermi (Tesla) cards or GTX 400/500 cards and attempt to run CUDA 9.1,9.2, or 10. XMR-STAK just refuses to format the CUDA code for that chip architecture.
+
 Solution: 
 So this is the build that resolves this, and allows the older Nvidia cards to mine all the current new variant 2 algos also.
 Technically, not a single line of code was changed, just how it was built with the CUDA 8 toolkit installed and build with their documented script.
+
 
  These are the fastest settings found for Tesla M2050, M2070, GTX 400, and GTX 500 series.
  It would be faster to use the CUDA drivers rather than open CL, but it's here for compatability sake.
@@ -19,8 +21,10 @@ Technically, not a single line of code was changed, just how it was built with t
  It's a good idea to not reuse your config.cfg, cpu.txt, or pools.txt from the older versions of xmr-stak and start from fresh.
  I did leave some default versions of the same files as a reference tool for what I know that works.
  The included files, especially nvidia.txt is just for reference of the fastest settings for the Fermi GTX 400-500 series of cards and Tesla cards.
+
  Included Visual C++ Runtime installer that is needed to run XMR-STAK if you haven't already installed it. See VC_redist.x64_2017.exe. 
  I included the OpenCL.dll and OpenCL64.dll that comes from the CUDA 8 toolkit so as to not be confused with the AMD ones floating around out there.
+
  Keep on mining and the shiny side up!
  -Argonator www.arqma.com 
 
