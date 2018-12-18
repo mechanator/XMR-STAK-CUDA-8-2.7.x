@@ -1,0 +1,5 @@
+12/17/2018
+XMR-STAK 2.7.1 7d6cd31b1 
+Build Version 1.1 for CUDA 8 Fermi cards for NVIDIA only.
+See readme.txt
+

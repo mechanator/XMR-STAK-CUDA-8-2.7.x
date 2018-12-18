@@ -1,0 +1,51 @@
+ "pool_list" :
+[
+{
+// This is a list of all the pools with all but one commented out. The one not commented out is the active one you wish to mine on.
+//"pool_address": "mm.supportcryptonight.com:9989",
+//uses turtlecoin for address on password
+//"pool_address": "arq.heigh-ho.funkypenguin.co.nz:7781",
+//uses + for diff
+//"pool_address": "pool.arq.semipool.com:13355",
+//"pool_address": "cryptonight-lite.private-locker-pools.com:3162",
+//"pool_address": "arqma.cryptoisme.com:4568",
+"pool_address": "arqidium.smartcoinpool.com:9955",
+//    "pool_address": "arq.getpool.org:57201",
+// uses .
+//      "pool_address": "arqma.herominers.com:10320",
+// uses +
+// "pool_address": "mine.arqma.com:7777",
+//   "pool_address": "mine.arqma.com:8888",
+// for solo 
+//uses .
+ "pool_address": "arq.multiminer.us:5555",
+//uses . for diff
+//    "pool_address": "us.pool.arqma.com:7777",
+//uses + for stat difficulty
+//"pool_address": "arq.mineallcrypto.com:7676",
+//"pool_address": "arqma.minersunite.net:3803",
+// uses .
+//"pool_address": "arqma.mychainpools.com:3611",
+// Your wallet address and static difficulty setting goes here. You can run with vardiff provided you pick the right port on the above list. ArQmA has found that a static difficulty is better // in the long run of things. There is a separate tutorial for determining the value for your hardware configuration. Basically hashrate X 30 = static difficulty with a few exceptions.
+// Your web wallet, cli wallet, and gui wallet address can be used here.  If you have only one wallet address, you can access it with either the CLI wallet application, the web wallet, or // the GUI wallet. They are all the same thing. (not trying to be confusing or snarky)
+// It's more secure to mine your coins to your wallet address first, then transfer them to exchanges with a payment id if possible for tracking purposes by the exchange.
+//  ArQmA recommends that you test mining directly to exchanges first. Consult you pool operator to make sure it is set correctly on their end also.
+ "wallet_address": "ar41W4hGBds2wcGeFQpXfKNqNuERQ8cs9VnYaSnHc6kU7pnjNW8JkzFF3J1inQqYv9erqpLDVvFKVZydqAJdAbhY1k5F3987T.75000",
+// "wallet_address": "ar41W4hGBds2wcGeFQpXfKNqNuERQ8cs9VnYaSnHc6kU7pnjNW8JkzFF3J1inQqYv9erqpLDVvFKVZydqAJdAbhY1k5F3987T",
+        "rig_id": "thingx",
+// "pool_password": "thingx:forgetitanyway@gmail.com",
+// iridium address: ir3arPPeZfhLFoTXb87Jn97KgXkVLuWADQC2fX8oPddbGjxUSvRB9naQ3AqR4Gy39z4xDrej6A9FwEts9uZjXxGV2iEjuKvdn
+"pool_password": "ir3arPPeZfhLFoTXb87Jn97KgXkVLuWADQC2fX8oPddbGjxUSvRB9naQ3AqR4Gy39z4xDrej6A9FwEts9uZjXxGV2iEjuKvdn",
+// iridium combined address to tradeogre exchange
+
+//"pool_password": "ir2btddJ78sicpKntYo3oRMLQh91VktzBfZzWbhwZnQxS815QLiG5WCAH9sgVGC5uwLZuMJCwW5CdFigNbJ3WTxU2CG5GnUDe.dba9d0363ef179d1beab35145ae52dca58fd89d9b229608f9e437294939fc7a9@thingx",
+//"pool_password": "TRTLv1Hqo3wHdqLRXuCyX3MwvzKyxzwXeBtycnkDy8ceFp4E23bm3P467xLEbUusH6Q1mqQUBiYwJ2yULJbvr5nKe8kcyc4uyps+bb5ccb7652b58a200d3f4e3847b5b20d76f1ad10786b631edc1b55cec00b9bab@thingx",
+"use_nicehash": false,
+"use_tls": false,
+"tls_fingerprint": "",
+"pool_weight": 1
+},
+],
+//"currency" : "cryptonight_v7",
+// for qrl
+"currency" : "arqma",
