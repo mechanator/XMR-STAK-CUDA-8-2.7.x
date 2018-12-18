@@ -198,6 +198,7 @@ Cut and paste these settings for the ones you have in your rig after running xmr
  */
 
 "auto_tune" : 11,
+
 // ? what setting is right ?
 
 
