@@ -119,4 +119,5 @@ Cut and paste these settings for the ones you have in your rig after running xmr
  */
 "platform_index" : 0,
 ===================================================================
+
 -eof
