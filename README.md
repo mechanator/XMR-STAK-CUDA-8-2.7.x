@@ -28,99 +28,186 @@ Tested nvidia.txt settings for Fermi GTX 400/500 and Tesla M/S Series cards.
 Cut and paste these settings for the ones you have in your rig after running xmr stak for the first time to determine the order of the cards installed by index number.
 ===========================================================================
 "gpu_threads_conf" :
+
 [
+
   // gpu: Tesla M2050 architecture: 20
+
   //      memory: 2927/3019 MiB
+
   //      smx: 14
+
   { "index" : 0,
+
     "threads" : 32, "blocks" : 40,
+
     "bfactor" : 6, "bsleep" :  15,
+
     "affine_to_cpu" : false, "sync_mode" : 3,
+
     "mem_mode" : 1,
-  },
-  // gpu: GeForce GTX 580 architecture: 20
-  //      memory: 1208/1536 MiB
-  //      smx: 16
-  { "index" : 1,
-    "threads" : 32, "blocks" : 32,
-    "bfactor" : 6, "bsleep" :  25,
-    "affine_to_cpu" : false, "sync_mode" : 3,
-    "mem_mode" : 1,
-  },
-  // gpu: GeForce GTX 465 architecture: 20
-  //      memory: 790/1024 MiB
-  //      smx: 11
-  { "index" : 2,
-    "threads" : 22, "blocks" : 33,
-    "bfactor" : 6, "bsleep" :  25,
-    "affine_to_cpu" : false, "sync_mode" : 3,
-    "mem_mode" : 1,
-  },
-  // gpu: Tesla M2070 architecture: 20
-  //      memory: 5988/6081 MiB
-  //      smx: 14
-  { "index" : 3,
-    "threads" : 32, "blocks" : 40,
-    "bfactor" : 6, "bsleep" :  15,
-    "affine_to_cpu" : false, "sync_mode" : 3,
-    "mem_mode" : 1,
+
   },
 
+  // gpu: GeForce GTX 580 architecture: 20
+
+  //      memory: 1208/1536 MiB
+
+  //      smx: 16
+
+  { "index" : 1,
+
+    "threads" : 32, "blocks" : 32,
+
+    "bfactor" : 6, "bsleep" :  25,
+
+    "affine_to_cpu" : false, "sync_mode" : 3,
+
+    "mem_mode" : 1,
+
+  },
+
+  // gpu: GeForce GTX 465 architecture: 20
+
+  //      memory: 790/1024 MiB
+
+  //      smx: 11
+
+  { "index" : 2,
+
+    "threads" : 22, "blocks" : 33,
+
+    "bfactor" : 6, "bsleep" :  25,
+
+    "affine_to_cpu" : false, "sync_mode" : 3,
+
+    "mem_mode" : 1,
+
+  },
+
+  // gpu: Tesla M2070 architecture: 20
+
+  //      memory: 5988/6081 MiB
+
+  //      smx: 14
+
+  { "index" : 3,
+
+    "threads" : 32, "blocks" : 40,
+
+    "bfactor" : 6, "bsleep" :  15,
+
+    "affine_to_cpu" : false, "sync_mode" : 3,
+
+    "mem_mode" : 1,
+
+  },
+
+
+
 ],
+
 ======================================================================
 
 
 -Tested amd.txt for opencl use, not recommended for throughput, but compatible:
 ============================================================================
 "gpu_threads_conf" : [
+
   // gpu: Tesla M2050  compute units: 14
+
   // memory:2891|3019|2891 MiB (used per thread|max per alloc|total free)
+
   { "index" : 0,
+
     "intensity" : 896, "worksize" : 8,
+
     "affine_to_cpu" : false, "strided_index" : 1, "mem_chunk" : 2,
+
     "unroll" : 8, "comp_mode" : false, "interleave" : 50
+
   },
+
   // gpu: GeForce GTX 580  compute units: 16
+
   // memory:1408|1536|1408 MiB (used per thread|max per alloc|total free)
+
   { "index" : 1,
+
     "intensity" : 896, "worksize" : 8,
+
     "affine_to_cpu" : false, "strided_index" : 1, "mem_chunk" : 2,
+
     "unroll" : 8, "comp_mode" : false, "interleave" : 50
+
   },
+
   // gpu: GeForce GTX 465  compute units: 11
+
   // memory:896|1024|896 MiB (used per thread|max per alloc|total free)
+
   { "index" : 2,
+
     "intensity" : 880, "worksize" : 8,
+
     "affine_to_cpu" : false, "strided_index" : 1, "mem_chunk" : 2,
+
     "unroll" : 8, "comp_mode" : false, "interleave" : 50
+
   },
+
   // gpu: Tesla M2070  compute units: 14
+
   // memory:5953|6081|5953 MiB (used per thread|max per alloc|total free)
+
   { "index" : 3,
+
     "intensity" : 896, "worksize" : 8,
+
     "affine_to_cpu" : false, "strided_index" : 1, "mem_chunk" : 2,
+
     "unroll" : 8, "comp_mode" : false, "interleave" : 50
+
   },
+
+
 
 ],
 
-/*
- * number of rounds per intensity performed to find the best intensity settings
- *
- * WARNING: experimental option
- *
- * 0 = disable auto tuning
- * 10 or higher = recommended value if you don't already know the best intensity
- */
-"auto_tune" : 11,
+
 
 /*
- * Platform index. This will be 0 unless you have different OpenCL platform - eg. AMD and Intel.
+
+ * number of rounds per intensity performed to find the best intensity settings
+
+ *
+
+ * WARNING: experimental option
+
+ *
+
+ * 0 = disable auto tuning
+
+ * 10 or higher = recommended value if you don't already know the best intensity
+
  */
+
+"auto_tune" : 11,
+// ? what setting is right ?
+
+
+/*
+
+ * Platform index. This will be 0 unless you have different OpenCL platform - eg. AMD and Intel.
+
+ */
+
 "platform_index" : 0,
+
+
 ===================================================================
+
 Donations glady accept for re-releasing a CUDA 8 compatible build for legacy cards.
 arqma address: ar2x9XfDtzybuHWVdsKq8kNxFir6ApAKW9A5L7NCWo5SACsMu9BNQNkeQN6PNVsidEXaLrpQR1abkFVGUtMmYpr31k4cU8Lzr
 XMR address: 42r2MZtFvtvDUyqzhvsSr2cxEaN1K9vPuhiNUdUZRFyQ2qgSecmdNTUBLwb3vTQt1KLY15Rqc4zwgMTh8QR1YfJ75Tz5jDK
--eof
 -eof
