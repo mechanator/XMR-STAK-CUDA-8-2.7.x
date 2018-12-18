@@ -22,7 +22,7 @@ or 386.28 for Tesla only cards in Windows 7 or 10.
   //      smx: 16
   { "index" : 1,
     "threads" : 32, "blocks" : 32,
-    "bfactor" : 6, "bsleep" :  15,
+    "bfactor" : 6, "bsleep" :  25,
     "affine_to_cpu" : false, "sync_mode" : 3,
     "mem_mode" : 1,
   },
@@ -31,7 +31,7 @@ or 386.28 for Tesla only cards in Windows 7 or 10.
   //      smx: 11
   { "index" : 2,
     "threads" : 22, "blocks" : 33,
-    "bfactor" : 6, "bsleep" :  15,
+    "bfactor" : 6, "bsleep" :  25,
     "affine_to_cpu" : false, "sync_mode" : 3,
     "mem_mode" : 1,
   },

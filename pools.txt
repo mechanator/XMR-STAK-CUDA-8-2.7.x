@@ -11,12 +11,12 @@
  * pool_weight     - Pool weight is a number telling the miner how important the pool is. Miner will mine mostly at the pool
  *                   with the highest weight, unless the pool fails. Weight must be an integer larger than 0.
  *
- * We feature pools up to 1MH/s. For a more complete list see M5M400's pool list at www.moneropools.com
+ * Added arqma coin which is algo aeon7, see www.arqma.com for fast, private, secure, ultra revised Cryptonote code.
  */
 
 "pool_list" :
 [
-	{"pool_address" : "arq.multiminer.us:5555", "wallet_address" : "ar41W4hGBds2wcGeFQpXfKNqNuERQ8cs9VnYaSnHc6kU7pnjNW8JkzFF3J1inQqYv9erqpLDVvFKVZydqAJdAbhY1k5F3987T.90000", "rig_id" : "thingx", "pool_password" : "thingx:x", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
+	{"pool_address" : "mine.arqma.com:5555", "wallet_address" : "ar41W4hGBds2wcGeFQpXfKNqNuERQ8cs9VnYaSnHc6kU7pnjNW8JkzFF3J1inQqYv9erqpLDVvFKVZydqAJdAbhY1k5F3987T", "rig_id" : "y", "pool_password" : "y:x", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
 ],
 
 /*

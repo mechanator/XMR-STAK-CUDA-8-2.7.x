@@ -4,8 +4,8 @@ These are the fastest settings found for Tesla M2050, M2070, GTX 465, and GTX 58
 It should also work on the dual Fermi GTX 590 (1024 cores).
 You must use CUDA 8 drivers which would be 385.28 for GTX 400/500 series with Teslas,
 or 386.28 for Tesla only cards in Windows 7 or 10. 
-CPU support is disabled due to bug in code by devs.
--Argonator
+
+-Argonator www.arqma.com
  */
 "gpu_threads_conf" :
 [
