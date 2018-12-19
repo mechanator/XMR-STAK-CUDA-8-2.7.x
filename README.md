@@ -25,6 +25,14 @@ Technically, not a single line of code was changed, just how it was built with t
 
  Included Visual C++ Runtime installer that is needed to run XMR-STAK if you haven't already installed it. See VC_redist.x64_2017.exe. 
  I included the OpenCL.dll and OpenCL64.dll that comes from the CUDA 8 toolkit so as to not be confused with the AMD ones floating around out there.
+ Typical installations:
+1. install Windows.
+2. Install Visual C++ 2017 runtime.
+3. Install CUDA 8 Toolkit with updates from www.nvidia.com
+4. Install either 385.69 combined driver, or Tesla 386.28(but only if you have only Tesla cards).
+5. Edit config.txt, pools.txt, keep nvidia.txt handy(rename it to something else).
+6. Run xmr-stak to populate the nvidia cuda settings for the cards in the right sequence.
+7. Edit nvidia.txt for the block and threads setting below for the highest hash output from the default nvidia.txt supplied.
 
  Keep on mining and the shiny side up!
  -Argonator www.arqma.com 
