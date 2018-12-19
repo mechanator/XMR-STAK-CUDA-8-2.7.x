@@ -225,4 +225,5 @@ Cut and paste these settings for the ones you have in your rig after running xmr
 Donations glady accept for re-releasing a CUDA 8 compatible build for legacy cards.
 arqma address: ar2x9XfDtzybuHWVdsKq8kNxFir6ApAKW9A5L7NCWo5SACsMu9BNQNkeQN6PNVsidEXaLrpQR1abkFVGUtMmYpr31k4cU8Lzr
 XMR address: 42r2MZtFvtvDUyqzhvsSr2cxEaN1K9vPuhiNUdUZRFyQ2qgSecmdNTUBLwb3vTQt1KLY15Rqc4zwgMTh8QR1YfJ75Tz5jDK
+
 -eof
