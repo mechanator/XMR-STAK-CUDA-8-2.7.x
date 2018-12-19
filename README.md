@@ -13,7 +13,9 @@ Technically, not a single line of code was changed, just how it was built with t
  These are the fastest settings found for Tesla M2050, M2070, GTX 400, and GTX 500 series.
  It would be faster to use the CUDA drivers rather than open CL, but it's here for compatability sake.
  You must use CUDA 8 drivers which would be 385.69 for GTX 400/500 series with Teslas,
- or 386.28 for Tesla only cards in Windows 7 or 10.
+ or 385.08 for Tesla only cards in Windows 7 or 10.
+
+The 385.08 drivers for windows 10 are here: https://www.nvidia.com/Download/driverResults.aspx/121402/en-us
  You don't need to install the 3D stereo driver and viewer, nor the Geforce Experience options.
  You don't need to install PhysX since you are mining and not gaming.
  Besides you don't want Geforce Experience constantly reminding you to update your driver,
