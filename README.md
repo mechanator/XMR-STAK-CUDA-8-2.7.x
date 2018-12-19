@@ -30,9 +30,10 @@ Technically, not a single line of code was changed, just how it was built with t
 2. Install Visual C++ 2017 runtime.
 3. Install CUDA 8 Toolkit with updates from www.nvidia.com
 4. Install either 385.69 combined driver, or Tesla 386.28(but only if you have only Tesla cards).
-5. Edit config.txt, pools.txt, keep nvidia.txt handy(rename it to something else).
-6. Run xmr-stak to populate the nvidia cuda settings for the cards in the right sequence.
-7. Edit nvidia.txt for the block and threads setting below for the highest hash output from the default nvidia.txt supplied.
+5  Turn on Large page support using gpedit.msc and the instructions supplied in the config.txt file.
+6. Edit config.txt to your liking, pools.txt to select your pool, keep nvidia.txt handy(rename it to something else).
+7. Run xmr-stak to populate the nvidia cuda settings for the cards in the right index sequence.
+8. Edit nvidia.txt for the block and threads setting below for the highest hash output from the default nvidia.txt supplied.
 
  Keep on mining and the shiny side up!
  -Argonator www.arqma.com 
