@@ -16,6 +16,7 @@ Technically, not a single line of code was changed, just how it was built with t
  or 385.08 for Tesla only cards in Windows 7 or 10.
 
 The 385.08 drivers for windows 10 are here: https://www.nvidia.com/Download/driverResults.aspx/121402/en-us
+The 385.69 can be found here : https://www.guru3d.com/files-get/geforce-385-69-whql-driver-download,1.html
  You don't need to install the 3D stereo driver and viewer, nor the Geforce Experience options.
  You don't need to install PhysX since you are mining and not gaming.
  Besides you don't want Geforce Experience constantly reminding you to update your driver,
