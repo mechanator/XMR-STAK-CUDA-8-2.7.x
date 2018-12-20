@@ -784,8 +784,7 @@ int main(int argc, char *argv[])
 	snprintf(buffer, sizeof(buffer), "\nConfigurable XMR-STAK dev donation level is set to %.1f%%\n\n", fDevDonationLevel * 100.0);
 	printer::inst()->print_str(buffer);
 	printer::inst()->print_str("Custom built CUDA 8 for Fermi GTX 400/500 and Tesla S or M series cards only. :\n");
-	printer::inst()->print_str("CPU mining currently does not work, use --noCPU option or comment out cpu.txt. \n");
-	printer::inst()->print_str("This miner was compiled specifically for Nvidia driver 385.28 for GTX cards or 386.28 for Tesla cards.  \n");
+	printer::inst()->print_str("This miner was compiled specifically for Nvidia driver 385.69 for GTX cards or 386.28 for Tesla cards.  \n");
 	printer::inst()->print_str("Sponsored by www.arqma.com, hand crafted by Argonator. \n");
 	printer::inst()->print_str("                    https://arqma.com                        \n\n");
 	printer::inst()->print_str("See https://github.com/mechanator/ for details.\n");
