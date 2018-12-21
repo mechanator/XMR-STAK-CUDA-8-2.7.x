@@ -31,7 +31,7 @@ The 385.69 can be found here : https://www.guru3d.com/files-get/geforce-385-69-w
  Typical installations:
 1. Install Windows.
 2. Install Visual C++ 2017 runtime.
-3. Install CUDA 8 Toolkit with updates from www.nvidia.com
+3. Install CUDA 8 Toolkit with updates from www.nvidia.com only if you develop CUDA apps, skip the driver install.
 4. Install either 385.69 combined driver, or Tesla 386.28(but only if you have only Tesla cards).
 5  Turn on Large page support using gpedit.msc and the instructions supplied in the config.txt file.
 6. Edit config.txt to your liking, pools.txt to select your pool, keep nvidia.txt handy(rename it to something else).
