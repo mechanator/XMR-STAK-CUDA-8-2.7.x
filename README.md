@@ -15,12 +15,11 @@ Technically, not a single line of code was changed, just how it was built with t
  You must use CUDA 8 drivers which would be 385.69 for GTX 400/500 series with Teslas,
  or 385.08 for Tesla only cards in Windows 7 or 10.
 
-The 385.08 drivers for windows 10 are here: https://www.nvidia.com/Download/driverResults.aspx/121402/en-us
-The 385.69 can be found here : https://www.guru3d.com/files-get/geforce-385-69-whql-driver-download,1.html
+ The 385.69 can be found here : https://www.guru3d.com/files-get/geforce-385-69-whql-driver-download,1.html
  You don't need to install the 3D stereo driver and viewer, nor the Geforce Experience options.
- You don't need to install PhysX since you are mining and not gaming.
+ You don't need to install PhysX since you are mining and not gaming. Less drivers to load and run, faster mining.
  Besides you don't want Geforce Experience constantly reminding you to update your driver,
- when you CANT since that would break 2.7.1 with cuda 8 support. Yes, it does break it. 
+ when you CANNOT since that would break 2.7.1 with cuda 8 support. Yes, it does break it. 
  I don't plan on supporting 32 bit builds of Windows OS. Nor Windows 8.1, just no. Nope.
  It's a good idea to not reuse your config.cfg, cpu.txt, or pools.txt from the older versions of xmr-stak and start from fresh.
  I did leave some default versions of the same files as a reference tool for what I know that works.
