@@ -1,0 +1,23 @@
+Build release 1.1 2018
+
+Changelog from main repository xmr-stak 2.7.0 0 2.7.1
+Bittube algo fix. 
+OpenCL: auto tuning option #2114
+OpenCl: fix NVIDIA backend amd bug #2113
+OpenCL: auto config two threads per GPU #2110
+fix clamp implementation backend amd bug
+OpenCL: opimize reciprocal calculation #2104
+OpenCL: comp mode optimization #2102
+update currencies #2101
+OpenCL: thread interleaving #2100 #2115 #2105
+OpenCl: optimize strided index 1 #2089
+OpenCL: add strided_index 3 #2088
+OpenCL: cnv8 optimization #2087
+OpenCl: optimize cn-v8 div #2086
+OpenCL: optimize cn-heavy div #2085
+AMD: use more 32bit operations #2084
+OpenCL reduce API overhead #2081
+OpenCL: reduce local mem footprint #2080
+CUDA: optimize cn-v8 div #2079
+CUDA: reduce cn-v8 shared mem footprint #2078
+CUDA: optimize cn-heavy div #2077
