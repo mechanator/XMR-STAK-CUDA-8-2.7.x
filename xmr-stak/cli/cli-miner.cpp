@@ -785,8 +785,8 @@ int main(int argc, char *argv[])
 	printer::inst()->print_str(buffer);
 	printer::inst()->print_str("Custom built CUDA 8 for Fermi GTX 400/500 and Tesla S or M series cards only. :\n");
 	printer::inst()->print_str("This miner was compiled specifically for Nvidia driver 385.69 for GTX cards or 386.28 for Tesla cards.  \n");
-	printer::inst()->print_str("Sponsored by www.arqma.com, hand crafted by Argonator. \n");
-	printer::inst()->print_str("                    https://arqma.com                        \n\n");
+	printer::inst()->print_str("Hand crafted by Argonator. \n");
+	printer::inst()->print_str("A great coin suggestion: https://arqma.com                        \n\n");
 	printer::inst()->print_str("See https://github.com/mechanator/ for details.\n");
 	printer::inst()->print_str("You can use following keys to display reports:\n");
 	printer::inst()->print_str("'h' - hashrate\n");
