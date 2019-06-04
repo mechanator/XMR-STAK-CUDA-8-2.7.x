@@ -1,46 +1,102 @@
+###### fireice-uk's and psychocrypt's
+# XMR-Stak - Cryptonight All-in-One Mining Software
 
-#                             XMR-STAK-CUDA-8-2.10.4
-Allows mining on GTX 400 500 and Tesla Series of Fermi cards. Supports v2 algorithms. 6/3/2019
-Build version 1.3
+XMR-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA GPUs and can be used to mine the crypto currencies Monero, Aeon and many more Cryptonight coins.
 
-Problem: If you have Fermi (Tesla) cards or GTX 400/500/600 series  cards and attempt to run CUDA 9.1,9.2, or 10. XMR-STAK just refuses to format the CUDA code for that chip architecture.
-Specifically, you get no hash or the miner application crashes when using these older cards.  The main dev doesn't want to release a build for older Fermi chips.(arch 20).
+## HTML reports
+<img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/4c09cdeee86f94df2e9dd86b927e64aded6184f5/xmr-stak-cpu-hashrate.png" width="260"> <img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/4c09cdeee86f94df2e9dd86b927e64aded6184f5/xmr-stak-cpu-results.png" width="260"> <img src="https://gist.githubusercontent.com/fireice-uk/2da301131ac01695ff79539a27b81d68/raw/4c09cdeee86f94df2e9dd86b927e64aded6184f5/xmr-stak-cpu-connection.png" width="260">
 
-Solution: So this is the build that resolves this, and allows the older Nvidia cards to mine all the current new variant 2 algos also. Technically, not a single line of code was changed, just how it was built with the CUDA 8 toolkit installed and build with their documented script.
+## Video setup guide on Windows
 
-These are the fastest settings found for Tesla M2050, M2070, GTX 400, and GTX 500 series. It would be faster to use the CUDA drivers rather than open CL, but it's here for compatability sake. You must use CUDA 8 drivers which would be 385.69 for GTX 400/500 series with Teslas, or 386.28 for Tesla only cards in Windows 7 or 10. You don't need to install the 3D stereo driver and viewer, nor the Geforce Experience options. You don't need to install PhysX since you are mining and not gaming. Besides you don't want Geforce Experience constantly reminding you to update your driver, when you CANT since that would break 2.7.1 with cuda 8 support. Yes, it does break it. I don't plan on supporting 32 bit builds of Windows OS. Nor Windows 8.1, just no. Nope. It's a good idea to not reuse your config.cfg, cpu.txt, or pools.txt from the older versions of xmr-stak and start from fresh. I did leave some default versions of the same files as a reference tool for what I know that works. The included files, especially nvidia.txt is just for reference of the fastest settings for the Fermi GTX 400-500 series of cards and Tesla cards.
-You can disable cpu mining with the switch.  I recommend XMRIG.cc by Bendroid which is much more efficient and produces a higher hash rate.
-Built with static linking for all cpu types.
-Built with dev free version.
-Built with no SSL support.
-Built with no HTTPD support.
+[<img src="https://gist.githubusercontent.com/fireice-uk/3621b179d56f57a8ead6303d8e415cf6/raw/f572faba67cc9418116f3c1dfd7783baf52182ce/vidguidetmb.jpg">](https://youtu.be/YNMa8NplWus)
+###### Video by Crypto Sewer
 
-Built with settings in miner build optimized for arch 20, but it can also run 30,50,52,60,61 which is the newer GTX and Quadro cards. 
-You can mix AMD cards in with the miner and still get their benefit.  However SRB Miner looks to be a bit more hash rate.
+## Overview
+* [Features](#features)
+* [Supported altcoins](#supported-altcoins)
+* [Download](#download)
+* [Usage](doc/usage.md)
+* [HowTo Compile](doc/compile.md)
+* [FAQ](doc/FAQ.md)
+* [Developer Donation](#default-developer-donation)
+* [Developer PGP Key's](doc/pgp_keys.md)
 
-Included Visual C++ Runtime installer that is needed to run XMR-STAK if you haven't already installed it. See VC_redist.x64_2017.exe.
+## Features
 
-Typical installation instructions:
+- support all common backends (CPU/x86, AMD-GPU and NVIDIA-GPU)
+- support all common OS (Linux, Windows and macOS)
+- supports algorithm cryptonight for Monero (XMR) and cryptonight-light (AEON)
+- easy to use
+  - guided start (no need to edit a config file for the first start)
+  - auto-configuration for each backend
+- open source software (GPLv3)
+- TLS support
+- [HTML statistics](doc/usage.md#html-and-json-api-report-configuraton)
+- [JSON API for monitoring](doc/usage.md#html-and-json-api-report-configuraton)
 
-1. Install Windows.
-2. Install Visual C++ 2017 runtime.
-3. Install either Windows Nvidia 385.69 combined driver, or Tesla 386.28(but only if you have only Tesla cards).
-4. Run xmr-stak to populate the nvidia cuda settings for the cards in the right index sequence.
-5. Edit nvidia.txt for the block and threads settings below for the highest hash output from the default nvidia.txt supplied.
-6. Don't forget to turn on Large Page Support. Instructions in the config.txt file generated by xmr-stak.
+## Supported altcoins
 
+Besides [Monero](https://getmonero.org), following coins can be mined using this miner:
 
-Tested nvidia.txt settings for Fermi GTX 400/500 and Tesla M/S Series cards. Cut and paste these settings for the ones you have in your rig after running xmr stak for the first time to determine the order of the cards installed by index number.
-Updated cn-turtle algo settings:
-1950 H on Tesla M2050 54 threads, 64 blocks.
-3350 H on GTX 580 64 threads, 64 blocks.
+- [Aeon](http://www.aeon.cash)
+- [BBSCoin](https://www.bbscoin.xyz)
+- [BitTube](https://coin.bit.tube/)
+- [Conceal](https://conceal.network)
+- [Graft](https://www.graft.network)
+- [Haven](https://havenprotocol.com)
+- [Lethean](https://lethean.io)
+- [Masari](https://getmasari.org)
+- [Plenteum](https://www.plenteum.com/)
+- [QRL](https://theqrl.org)
+- **[Ryo](https://ryo-currency.com) - Upcoming xmr-stak-gui is sponsored by Ryo**
+- [Stellite](https://stellite.cash/)
+- [TurtleCoin](https://turtlecoin.lol)
+- [Zelerius](https://zelerius.org/)
+- [X-CASH](https://x-network.io/)
 
+Ryo currency is a way for us to implement the ideas that we were unable to in
+Monero. See [here](https://github.com/fireice-uk/cryptonote-speedup-demo/) for details.
 
--Tested amd.txt for opencl use, not recommended for throughput, but compatible:
-Keep on mining and the shiny side up! -Argonator arqma.com
+If your prefered coin is not listed, you can choose one of the following algorithms:
+- 256Kib scratchpad memory
+    - cryptonight_turtle
+- 1MiB scratchpad memory
+    - cryptonight_lite
+    - cryptonight_lite_v7
+    - cryptonight_lite_v7_xor (algorithm used by ipbc)
+- 2MiB scratchpad memory
+    - cryptonight
+    - cryptonight_gpu (for Ryo's 14th of Feb fork)
+    - cryptonight_masari (used in 2018)
+    - cryptonight_v7
+    - cryptonight_v7_stellite
+    - cryptonight_v8
+    - cryptonight_v8_double (used by X-CASH)
+    - cryptonight_v8_half (used by masari and stellite)
+    - cryptonight_v8_reversewaltz (used by graft)
+    - cryptonight_v8_zelerius
+- 4MiB scratchpad memory
+    - cryptonight_haven
+    - cryptonight_heavy
 
-Donations glady accept for re-releasing a CUDA 8 compatible build for legacy cards.
-ArQmA donation address: ar2x9XfDtzybuHWVdsKq8kNxFir6ApAKW9A5L7NCWo5SACsMu9BNQNkeQN6PNVsidEXaLrpQR1abkFVGUtMmYpr31k4cU8Lzr XMR address: 42r2MZtFvtvDUyqzhvsSr2cxEaN1K9vPuhiNUdUZRFyQ2qgSecmdNTUBLwb3vTQt1KLY15Rqc4zwgMTh8QR1YfJ75Tz5jDK
-BTC donation address: 3JJdhZrGVofq4DshpBJ6ZHneRdD7gEtsXH
+Please note, this list is not complete and is not an endorsement.
 
--eof
+## Download
+
+You can find the latest releases and precompiled binaries on GitHub under [Releases](https://github.com/fireice-uk/xmr-stak/releases).
+
+## Default Developer Donation
+
+By default, the miner will donate 2% of the hashpower (2 minutes in 100 minutes) to my pool. If you want to change that, edit [donate-level.hpp](xmrstak/donate-level.hpp) before you build the binaries.
+
+If you want to donate directly to support further development, here is my wallet
+
+fireice-uk:
+```
+4581HhZkQHgZrZjKeCfCJxZff9E3xCgHGF25zABZz7oR71TnbbgiS7sK9jveE6Dx6uMs2LwszDuvQJgRZQotdpHt1fTdDhk
+```
+
+psychocrypt:
+```
+45tcqnJMgd3VqeTznNotiNj4G9PQoK67TGRiHyj6EYSZ31NUbAfs9XdiU5squmZb717iHJLxZv3KfEw8jCYGL5wa19yrVCn
+```
